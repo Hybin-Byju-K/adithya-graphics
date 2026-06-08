@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /.next/
+Disallow: /api/
+Disallow: /private/
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://adithyasgraphics.com/sitemap.xml

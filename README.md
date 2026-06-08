@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adithya's Graphics - Premium Portfolio Website
 
-## Getting Started
+A premium, production-ready portfolio website for graphic designer **Adithya Krishnan**, built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, **GSAP ScrollTrigger**, and **Lenis smooth scrolling**.
 
-First, run the development server:
+## 🎨 Features
+
+### Design & Animation
+- ✨ Premium dark theme with accent red color system (#E51A24)
+- 🎬 Advanced GSAP ScrollTrigger animations
+- 🌊 Smooth scroll experience with Lenis
+- 🎭 Framer Motion page transitions and interactions
+- 🖱️ Magnetic button effects and hover states
+- ✍️ Text reveal animations
+- 🎪 Parallax backgrounds and floating particles
+
+### Pages
+- 🏠 **Home** - Hero section with animated headlines, services, testimonials, CTA
+- 🎨 **Portfolio** - Category-based filtering with masonry layout
+- 👤 **About** - Story, expertise, toolkit, and lifestyle sections
+- ⭐ **Testimonials** - All client testimonials with star ratings
+- 💎 **Promises** - Core promises with numbered cards
+- 📧 **Contact** - Contact form with WhatsApp and email CTAs
+
+### Technical
+- 📱 Fully responsive (mobile-first approach)
+- ♿ WCAG accessibility compliance
+- 🔍 SEO optimized with metadata and structured data
+- ⚡ Performance optimized (lazy loading, image optimization)
+
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Key Folders
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app` - Pages and routes
+- `/components` - Reusable components (UI, sections, common)
+- `/hooks` - Custom React hooks
+- `/lib` - Utilities, animations, and constants
+- `/types` - TypeScript definitions
+- `/public` - Static assets (images, portfolio, robots.txt)
 
-## Learn More
+## 🎨 Color System
 
-To learn more about Next.js, take a look at the following resources:
+All colors use CSS variables (editable in `app/globals.css`):
+- Background: `#0D0D11`
+- Surface: `#1A1A22`
+- Accent Red: `#E51A24`
+- Text: `#FFFFFF` (headings), `#94A3B8` (body)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✏️ Content & Information
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All static content is in `lib/constants.ts`:
+- `SERVICES` - 7 service offerings
+- `TESTIMONIALS` - Client testimonials
+- `FEATURES` - Why Choose Us items
+- `PROMISES` - Core promises
+- `EXPERTISE` - Expertise sections
+- `CONTACT_INFO` - Contact details
 
-## Deploy on Vercel
+Update this file to change content across all pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖼️ Replacing Brand Assets
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Logo
+- Replace `/public/images/logo.png` with your logo
+- Update navbar and hero sections if needed
+
+### Hero Background
+- Replace `/public/images/hero-cover.jpg` with your image (1920x1080px+)
+
+### Portfolio Images
+Update portfolio items in:
+- `components/sections/SelectedWorks.tsx`
+- `app/portfolio/page.tsx`
+
+## 📋 Pages Overview
+
+**Home** (`/`) - 6 sections
+- Hero with animated headlines
+- Services (7 cards)
+- Why Choose Us (5 features)
+- Selected Works portfolio preview
+- Testimonials preview
+- Large CTA banner
+
+**Portfolio** (`/portfolio`) - Category filtering with all portfolio items
+
+**About** (`/about`) - Story, expertise, tools, lifestyle
+
+**Testimonials** (`/testimonials`) - All client testimonials
+
+**Promises** (`/promises`) - 4 core promises with numbers
+
+**Contact** (`/contact`) - Contact form, email, phone, WhatsApp
+
+## 🔧 Customization
+
+### Change Accent Color
+Edit `--accent` and `--accent-hover` in `app/globals.css`
+
+### Add Content
+Edit constants in `lib/constants.ts` - changes reflect across entire site
+
+### Add New Animation
+Create variant in `lib/animations.ts`, use in component with Framer Motion
+
+### Add New Section
+Create component in `components/sections/`, import and use in page
+
+## 📊 Performance
+
+Targets:
+- Lighthouse Score: 90+
+- First Contentful Paint: < 1.5s
+- Mobile optimized with lazy loading
+- Image optimization with Next/Image
+- Code splitting via dynamic imports
+
+## 🚀 Deploy
+
+### To Vercel (Recommended)
+1. Push to GitHub
+2. Connect repo to Vercel
+3. Deploy (auto-configured for Next.js)
+
+## 📚 Tech Stack
+
+- **Next.js 15** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - React animations
+- **GSAP** - ScrollTrigger animations
+- **Lenis** - Smooth scrolling
+- **React Icons** - SVG icons
+- **Next/Image** - Image optimization
+
+## 🎬 Key Components
+
+- `Hero` - Homepage hero with animated headlines
+- `Services` - 7 interactive service cards
+- `WhyChooseUs` - Feature cards with stats
+- `SelectedWorks` - Portfolio preview masonry
+- `TestimonialPreview` - 3 testimonials
+- `CTA` - Call-to-action banner
+- `Navbar` - Sticky navigation
+- `Footer` - Footer with links
+- `Button` - Magnetic button component
+- `Card` - Premium card with tilt
+- `SectionHeading` - Animated heading component
+
+## 🔍 SEO
+
+- Auto-generated sitemap
+- robots.txt for search engines
+- Meta tags on root layout
+- Image alt text
+- Semantic HTML
+
+## ♿ Accessibility
+
+- Semantic HTML
+- ARIA labels
+- Keyboard navigation
+- Focus visible styles
+- Color contrast WCAG AA
+- Form labels
+
+## 📞 Support & Updates
+
+For issues or customization help, refer to the included setup guide.
+
+---
+
+**Status**: Production Ready ✅
+**Version**: 1.0
+**Created**: 2026

@@ -1,0 +1,6 @@
+export { Hero } from './Hero'
+export { Services } from './Services'
+export { WhyChooseUs } from './WhyChooseUs'
+export { SelectedWorks } from './SelectedWorks'
+export { TestimonialPreview } from './TestimonialPreview'
+export { CTA } from './CTA'
