@@ -1,0 +1,23 @@
+# Ignore artifacts
+node_modules
+.next
+dist
+build
+coverage
+
+# Ignore all files by default
+**
+
+# Include files to format
+!**/*.js
+!**/*.jsx
+!**/*.ts
+!**/*.tsx
+!**/*.json
+!**/*.md
+!**/*.css
+
+# Exclude specific files/folders
+.git
+.vscode
+.idea
