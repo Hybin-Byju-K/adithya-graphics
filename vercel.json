@@ -3,7 +3,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm ci",
   "framework": "nextjs",
-  "nodeVersion": "20.x",
   "outputDirectory": ".next",
   "env": {
     "NEXT_PUBLIC_SITE_URL": "@site_url"
