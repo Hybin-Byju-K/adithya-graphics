@@ -1,0 +1,19 @@
+ Volume in drive C is WINDOWS
+ Volume Serial Number is D23C-B9E7
+
+ Directory of C:\Users\PUSHPAKATH111\Downloads\adithya-graphics-main\adithya-graphics-main\public\images\services
+
+06/15/2026  03:08 PM    <DIR>          .
+06/15/2026  02:52 PM    <DIR>          ..
+06/07/2026  04:30 AM         1,443,384 business-card.jpg
+06/15/2026  03:08 PM               189 copy_log.txt
+06/15/2026  03:08 PM                 0 dir_log.txt
+06/15/2026  03:01 PM                 4 dummy.txt
+06/07/2026  04:30 AM         1,443,384 event.jpg
+06/07/2026  04:30 AM         1,443,384 logo-branding.jpg
+06/07/2026  04:30 AM         1,443,384 menu.jpg
+06/07/2026  04:30 AM         1,443,384 packaging.jpg
+06/07/2026  04:30 AM         1,443,384 poster.jpg
+06/07/2026  04:30 AM         1,443,384 video.jpg
+              10 File(s)     10,103,881 bytes
+               2 Dir(s)  332,041,969,664 bytes free
